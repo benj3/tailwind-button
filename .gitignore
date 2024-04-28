@@ -23,3 +23,6 @@ Thumbs.db
 build-storybook.log
 
 *storybook.log
+
+# Editor
+.vscode/*

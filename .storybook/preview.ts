@@ -8,11 +8,15 @@ const preview: Preview = {
     actions: { argTypesRegex: '^on[A-Z].*' },
     layout: 'fullscreen',
     backgrounds: {
-      default: 'white',
+      default: 'grey',
       values: [
         {
           name: 'white',
           value: '#ffffff',
+        },
+        {
+          name: 'grey',
+          value: '#B5B5B5',
         },
         {
           name: 'black',

@@ -1,0 +1,180 @@
+.button {
+  display: inline-flex;
+  gap: theme('spacing.2');
+  padding: theme('spacing.3') theme('spacing.6');
+  border-radius: theme('borderRadius.3xl');
+  font-family: theme('fontFamily.sans');
+  font-size: theme('fontSize.xs');
+  font-weight: theme('fontWeight.bold');
+  line-height: theme('spacing.6');
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.button svg {
+  width: theme('spacing.6');
+  height: theme('spacing.6');
+}
+
+.button--disabled {
+  pointer-events: none;
+  cursor: initial;
+}
+
+/* Primary Button */
+
+.button--primary {
+  background: theme('colors.black');
+  color: theme('colors.white');
+}
+
+.button--primary svg {
+  fill: theme('colors.white');
+}
+
+.button--primary:hover {
+  background: theme('colors.greyMedium');
+  color: theme('colors.white');
+}
+
+.button--primary:active {
+  background: theme('colors.greyLight');
+  color: theme('colors.greyBorder');
+}
+
+.button--primary:focus-visible {
+  box-shadow: 0 0 0 theme('spacing.1') theme('colors.transparentBlack50');
+}
+
+.button--primary:disabled,
+.button--primary.button--disabled {
+  background: theme('colors.greyLight');
+  color: theme('colors.greyBorder');
+}
+
+.button--primary:disabled svg,
+.button--primary.button--disabled svg,
+.button--primary:active svg {
+  fill: theme('colors.greyBorder');
+}
+
+.button--primary.button--outline {
+  background: theme('colors.transparent');
+  color: theme('colors.black');
+  border-color: theme('colors.black');
+}
+
+.button--primary.button--outline svg {
+  fill: theme('colors.black');
+}
+
+.button--primary.button--outline:hover {
+  background: theme('colors.greyHover');
+  color: theme('colors.black');
+  border-color: theme('colors.black');
+}
+
+.button--primary.button--outline:active {
+  background: theme('colors.greyBackground');
+  color: theme('colors.greyBorder');
+  border-color: theme('colors.greyBorder');
+}
+
+.button--primary.button--outline:disabled,
+.button--primary.button--outline.button--disabled {
+  background: theme('colors.greyLight');
+  color: theme('colors.greyDark');
+  border-color: theme('colors.greyLight');
+}
+
+.button--primary.button--outline:focus-visible {
+  box-shadow: 0 0 0 theme('spacing.1') theme('colors.transparentBlack50');
+}
+
+.button--primary.button--outline:disabled svg,
+.button--primary.button--disabled.button--outline svg,
+.button--primary.button--outline:active svg {
+  fill: theme('colors.greyBorder');
+}
+
+/* Secondary Button */
+
+.button--secondary {
+  background: theme('colors.white');
+  color: theme('colors.black');
+}
+
+.button--secondary svg {
+  fill: theme('colors.black')
+}
+
+.button--secondary:hover {
+  background: theme('colors.greyHover');
+  color: theme('colors.black');
+}
+
+.button--secondary:active {
+  background: theme('colors.greyLight');
+  color: theme('colors.greyDark');
+}
+
+.button--secondary:focus-visible {
+  box-shadow: 0 0 0 theme('spacing.1') theme('colors.transparentBlack50');
+}
+
+.button--secondary:disabled,
+.button--secondary.button--disabled {
+  background: theme('colors.greyLight');
+  color: theme('colors.greyDark');
+}
+
+.button--secondary:disabled svg,
+.button--secondary.button--disabled svg,
+.button--secondary:active svg {
+  fill: theme('colors.greyBorder');
+}
+
+.button--secondary.button--outline {
+  background: theme('colors.transparent');
+  color: theme('colors.white');
+  border-color: theme('colors.white');
+}
+
+.button--secondary.button--outline svg {
+  fill: theme('colors.white');
+}
+
+.button--secondary.button--outline:hover {
+  background: theme('colors.transparentWhite20');
+  color: theme('colors.white');
+  border-color: theme('colors.white');
+}
+
+.button--secondary.button--outline:active {
+  background: theme('colors.transparentWhite30');
+  color: theme('colors.white');
+  border-color: theme('colors.white');
+}
+
+.button--secondary.button--outline:disabled,
+.button--secondary.button--outline.button--disabled {
+  background: theme('colors.transparent');
+  color: theme('colors.greyBorder');
+  border-color: theme('colors.greyBorder'); 
+}
+
+.button--secondary.button--outline:focus-visible {
+  box-shadow: 0 0 0 theme('spacing.1') theme('colors.transparentBlack20');
+}
+
+.button--secondary.button--outline:active svg {
+  fill: theme('colors.white');
+}
+
+.button--secondary.button--outline:disabled svg,
+.button--secondary.button--disabled.button--outline svg {
+  fill: theme('colors.greyBorder');
+}
